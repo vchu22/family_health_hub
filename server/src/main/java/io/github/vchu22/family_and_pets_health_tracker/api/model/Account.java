@@ -1,12 +1,12 @@
 package io.github.vchu22.family_and_pets_health_tracker.api.model;
 
-public class User {
+public class Account {
     private int id;
     private String username;
     private String email;
     private String password;
 
-    public User(int id, String username, String email, String password) {
+    public Account(int id, String username, String email, String password) {
         this.id = id;
         this.username = username;
         this.email = email;
