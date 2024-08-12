@@ -1,19 +1,32 @@
 package io.github.vchu22.family_and_pets_health_tracker.api.model;
 
+import jakarta.persistence.*;
+
+import java.util.UUID;
+
+@Entity
+@Table(name = "account")
 public class Account {
-    private int id;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private UUID id;
+
+    @Column(unique = true, nullable = false)
     private String username;
+    @Column(unique = true, nullable = false)
     private String email;
+    @Column(nullable = false)
     private String password;
 
-    public Account(int id, String username, String email, String password) {
-        this.id = id;
+    private Account() {}
+    public Account(String username, String email, String password) {
         this.username = username;
         this.email = email;
         this.password = password;
     }
 
-    public int getId() {
+    public UUID getId() {
         return id;
     }
 
