@@ -1,6 +1,3 @@
-# Copy the .env file to src/main/resources/env.properties
-COPY .env /home/gradle/src/main/resources/env.properties
-
 #
 # Build stage
 #
@@ -16,3 +13,6 @@ LABEL org.name="io.github.vchu22"
 FROM eclipse-temurin:17-jdk-jammy
 COPY --from=build /home/gradle/src/build/libs/family_and_pets_health_tracker-1.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
+
+# Copy the .env file to src/main/resources/env.properties
+COPY .env /home/gradle/src/main/resources/env.properties
