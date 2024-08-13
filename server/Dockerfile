@@ -1,11 +1,12 @@
+# Copy the .env file to src/main/resources/env.properties
+COPY .env /home/gradle/src/main/resources/env.properties
+
 #
 # Build stage
 #
 FROM gradle:jdk17-jammy AS build
 COPY --chown=gradle:gradle . /home/gradle/src
 WORKDIR /home/gradle/src
-# Copy the .env file to src/main/resources/env.properties
-COPY .env main/resources/env.properties
 RUN gradle build --no-daemon
 
 LABEL org.name="io.github.vchu22"
