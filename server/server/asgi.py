@@ -1,5 +1,5 @@
 """
-ASGI config for family_and_pets_tracker project.
+ASGI config for family_health_hub project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 

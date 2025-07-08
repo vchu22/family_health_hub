@@ -1,5 +1,5 @@
 """
-WSGI config for family_and_pets_tracker project.
+WSGI config for family_health_hub project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

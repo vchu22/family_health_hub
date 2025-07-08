@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "family-and-pets-health-tracker",
-    "slug": "family-and-pets-health-tracker",
+    "name": "family-health-hub",
+    "slug": "family-health-hub",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
