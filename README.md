@@ -1,5 +1,5 @@
-# Family and Pets Health Tracker
-A full-stack application to record the health status of your household members and pets. 
+# Family Health Hub
+A full-stack cross-platform application for keeping track of the health conditions of household members and pets. 
 
 # Tech Stack
 - Back-end server: Java Spring Boot
